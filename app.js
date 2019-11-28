@@ -25,7 +25,7 @@ function insertElement(params) {
 
     if ((params.length > 1 && params[0] === "clear") || (AvailableCommands[params[0]]===undefined) || (params.length > 2) || (params.length == 2 && options[params[1]]===undefined) || (params.length==1 && AvailableCommands[params[0]]==="") ) {
         element.className = "error left";
-        element.innerHTML = AvailableCommands[params[0]]===""?`${params[0]} command expects 1 more argument.`:"command not found <br/> Type `help' to see the list of commands";
+        element.innerHTML = AvailableCommands[params[0]]===""?`${params[0]} command expects 1 more argument or second argument is not valid.`:"command not found <br/> Type `help' to see the list of commands";
         content.appendChild(element);
         console.log(params)
     }
