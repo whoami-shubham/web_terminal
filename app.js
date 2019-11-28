@@ -27,7 +27,6 @@ function insertElement(params) {
         element.className = "error left";
         element.innerHTML = AvailableCommands[params[0]]===""?`${params[0]} command expects 1 more argument or second argument is not valid.`:"command not found <br/> Type `help' to see the list of commands";
         content.appendChild(element);
-        console.log(params)
     }
     else {
 
@@ -50,6 +49,11 @@ function insertElement(params) {
             else if(params[0]==="cat"){
                 element.className ="sucess left";
                 element.innerHTML = AvailableCommands[params[1]];
+                content.appendChild(element);
+            }
+            else{
+                element.className = "error left";
+                element.innerHTML = `${params[0]} command don't expects more argument or second argument is not valid.`;
                 content.appendChild(element);
             }
         }
