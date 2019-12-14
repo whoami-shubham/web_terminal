@@ -57,7 +57,7 @@ function updateScroll() {
 
 var AvailableCommands = {
     ls: " portfolio &nbsp;&nbsp;&nbsp;&nbsp; blog &nbsp;&nbsp;&nbsp;&nbsp; github &nbsp;&nbsp;&nbsp;&nbsp; linkedin",
-    help: "Web_Terminal, &nbsp; version 1.0.0 <br/><br/> Available Commands <br/> 1. ls <br/> 2. pwd <br/> 3. clear <br/> 4. cd <br/> 5. cat <br/> 6. help",
+    help: "Web_Terminal, &nbsp; version 1.0.0 <br/><br/> Available Commands <br/> 1. ls <br/> 2. pwd <br/> 3. clear <br/> 4. cd <br/> 5. cat <br/> 6. whoami <br/> 7. help <br/>",
     pwd: "<a href='https://whoami-shubham.github.io/web_terminal'>~/web_terminal</a>",
     portfolio: `<a href=${options.portfolio} title='click to Follow link'>whoamishubham.github.io</a>`,
     blog: `<a href=${options.blog} title='click to Follow link'>~/shubham</a>`,
@@ -65,7 +65,8 @@ var AvailableCommands = {
     linkedin: `<a href=${options.linkedin} title='click to Follow link'>@whoamishubham</a>`,
     cd: "",
     cat: "",
-    clear: "clear screen"
+    clear: "clear screen",
+    whoami: document.querySelector(".logo-hidden").innerHTML
 
 }
 

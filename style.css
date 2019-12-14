@@ -37,6 +37,9 @@ pre{
 .help{
     color:#fff;
 }
+.logo-hidden{
+	visibility: hidden;
+}
 .left{
     display: block;
     text-align: left;
