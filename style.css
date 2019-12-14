@@ -57,6 +57,9 @@ pre{
     border: none;
     outline: none;
 }
+.logo{
+	font-size: smaller;
+}
 
 .command::before{
     content: "$";
@@ -96,5 +99,8 @@ pre{
  @media (max-width: 650px){
     .content{
         height: 30vh;
+    }
+    .logo{
+    	font-size: 1.7vw;
     }
  }
