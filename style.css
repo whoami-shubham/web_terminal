@@ -63,6 +63,19 @@ pre{
 .logo{
 	font-size: smaller;
 }
+footer{
+    bottom: 1;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+}
+.bug{
+    width: 30px;
+    height: 30px;
+}
+a{
+    text-decoration: none !important;
+}
 
 .command::before{
     content: "$";
